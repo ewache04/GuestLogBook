@@ -1,0 +1,30 @@
+# Guest Tracker
+
+Author: Jeremiah E. Ochepo
+Last Updated: 9/15/19
+
+## Description
+
+This Python script tracks guest entries using a user ID system. It prompts users to enter their user ID, records the entry time, and saves the information to a text file. The user ID is associated with a specific guest name.
+
+## Features
+
+- Supports multiple guests with unique user IDs.
+- Records guest name, user ID, and entry time.
+- Uses a simple text file for data storage.
+
+## Usage
+
+1. Run the script (guest_log_book).
+2. Enter your user ID when prompted.
+3. The script will check if the user ID is in the guest list.
+4. If valid, it records the entry time along with the guest name and user ID.
+5. The guest book information is displayed, including a horizontal line divider.
+6. Repeat the process or enter 'quit' to end the program.
+
+## Guest List Configuration
+
+Edit the `guest_list` dictionary in the script to add or remove guest user IDs and names.
+
+```python
+guest_list = {'001': 'Mike', '002': 'Bob', '003': 'Ruth', ...}
